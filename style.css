@@ -1,0 +1,90 @@
+/* UNIVERSAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ border: 1px dashed red;
+ background-color: rgb(174, 162, 195);
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-direction: column;
+ height: 500px;
+ width: 400px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 20px 5px rgb(225, 255, 255);
+ margin: auto;
+ margin-top: 80px;
+}
+
+/* CONVERTER */
+
+
+/* DRY CODE */
+.title,
+.text-title,
+.voice-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    align-self: start;
+    text-transform: capitalize;
+}
+
+.text-title,
+.voice-title {
+    padding: 15px 0;
+}
+/* Text and Video Section */
+#text-section,
+#video-section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#text, 
+#voice {
+    border: none;
+    overflow: 2px solid rgba(128, 128, 128, 0.623);
+    width: 20rem;
+}
+
+/* TEXT */
+.title {
+    font-size: 2rem;
+    color: rgb(48, 48, 48);
+}
+
+#text {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 7rem;
+    border-radius: 0.5rem;
+}
+
+/* VOICE */
+#voice {
+    height: 3rem;
+    border-radius: 0.4rem;
+    padding: 0 10px;
+}
+
+/* BUTTON */
+#submit {
+    background-color: rgba(92, 55, 225, 0.979);
+    color: #fff;
+    cursor: pointer;
+    width: 20rem;
+    height: 3rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 20px;
+}
